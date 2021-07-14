@@ -31,6 +31,7 @@ func NewServer(ip string, port int) *Server {
 
 func (s *Server) Start() {
 	listener, err := net.Listen("tcp", fmt.Sprintf("%s:%d", s.Ip, s.Port))
+
 	if err != nil {
 		fmt.Println("net.Listen err:", err)
 		return

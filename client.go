@@ -88,6 +88,7 @@ func (c *Client) QueryUsers() {
 }
 
 func (c *Client) PrivateChat() {
+
 	var remoteName string
 	var chatMsg string
 
